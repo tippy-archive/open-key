@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <title>Archive Open-Key Management & Hasher</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="Archive Open Key Management" />
+        <meta property="og:description" content="integrated ver. 260314" />
+        <meta property="og:image" content="https://lh3.googleusercontent.com/pw/AP1GczMH_k6dw8yhmJBkVHU0WSs9D0lxriaF3DqVZ4wi1cQt1Djln6xF9eH-OlkEjuvZuLusAPWeQT1-R_xkp7CQrpo3u4Tj6AKsZe2rk0t3LvQLsfoete7Oo9rwac3xQEM5aKT9bneHZsXNnqTstGV8wrF9" />
+        <link rel="shortcut icon" href="https://lh3.googleusercontent.com/pw/AP1GczMbpSX92DIho7-vZydv18Kj0pUeJiPlHMEiF9V6ufXZ7j-MpbH7d_YmXn_WfpT3DNR3uHVlfOYvpzaxifVa7EY0Eq1mJn8Rq8_sueAC7E58jZpTLiaju3BG_--TRK-bE9bRDF_OXBH5JSwC0rDuh6XK" />
+        <link rel="icon" href="https://lh3.googleusercontent.com/pw/AP1GczMbpSX92DIho7-vZydv18Kj0pUeJiPlHMEiF9V6ufXZ7j-MpbH7d_YmXn_WfpT3DNR3uHVlfOYvpzaxifVa7EY0Eq1mJn8Rq8_sueAC7E58jZpTLiaju3BG_--TRK-bE9bRDF_OXBH5JSwC0rDuh6XK" />
+        <link rel="stylesheet" type="text/css" href="open-key.css" />
+    </head>
+    <body>
+        <h3 class="section-title">SHA-384 Generator</h3>
+        <div class="container">
+            <textarea id="inputText" placeholder="변환할 값을 입력하세요..."></textarea>
+            <div class="result-box" id="result">여기에 해시값이 표시됩니다.</div>
+            <div class="controls">
+                <button class="btn-clear" onclick="clearText()">지우기</button>
+                <button class="btn-copy" onclick="copyHash()">복사하기</button>
+            </div>
+        </div>
+        <h3 class="section-title">Archive Open-Key List</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th style="width: 30%;">계정</th>
+                    <th style="width: 70%;">공개키</th>
+                </tr>
+            </thead>
+            <tbody id="table-body"></tbody>
+        </table>
+        <script src="open-key.js"></script>
+    </body>
+</html>
