@@ -112,7 +112,8 @@ table {
     margin-bottom: 20px;
 }
 
-td,th {
+td,
+th {
     border-bottom: 1px solid #e9ecef;
     padding: 12px 15px;
     border: none;

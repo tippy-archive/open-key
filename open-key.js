@@ -13,10 +13,10 @@ async function calculateHash() {
     const encoder = new TextEncoder();
     const data = encoder.encode(text);
     const hashBuffer = await crypto.subtle.digest('SHA-384', data);
-    
+
     const hashArray = Array.from(new Uint8Array(hashBuffer));
     const hashHex = hashArray.map(b => b.toString(16).padStart(2, '0')).join('');
-    
+
     resultArea.innerText = hashHex.toUpperCase();
 }
 
@@ -30,7 +30,7 @@ function copyHash() {
     const originalText = inputArea.value;
 
     if (resultText.startsWith('여기') || !originalText) return;
-    
+
     navigator.clipboard.writeText(resultText).then(() => {
         const tempText = resultArea.innerText;
         resultArea.innerText = "복사 완료!";
@@ -72,10 +72,10 @@ function copyText(text, element) {
         const originalText = element.innerText;
         element.innerText = "복사 완료!";
         element.style.color = "#28a745";
-        
+
         setTimeout(() => {
             element.innerText = originalText;
-            element.style.color = ""; 
+            element.style.color = "";
         }, 1000);
     }).catch(err => {
         console.error('복사 실패:', err);
