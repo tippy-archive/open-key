@@ -6,13 +6,13 @@
         <title>Archive Open-Key Management</title>
         <meta property="og:type" content="website" />
         <meta property="og:title" content="Archive Open Key Management" />
-        <meta property="og:description" content="integrated ver. 260403" />
+        <meta property="og:description" content="integrated ver. 260531" />
         <meta property="og:image" content="https://lh3.googleusercontent.com/pw/AP1GczOmfG7WAfLXCn2VQ4UsRuhWZWUwYsLHla7TYkfXsmQHjzewowISX17aUh3qnnADcKHyh3BYhRaFryI2LSFwosTScUWAsoYZ21YBw1VPeF0aCWtemu6XvsOqxom4dHyy9fA3cnXCunQ6W7549pVc8RJk" />
         <link rel="shortcut icon" href="https://lh3.googleusercontent.com/pw/AP1GczMflJz2ICYwAbOnNNH9xK3dsBosn4ROpvyTAP7sMoqdIOuAP4QhqMzFjzt67HcwtzKaZoQ7DmO-xVwBJQEAw3eiQejuL-ScqTgDFGgQ-8HW67mxcABcsAZpiSfHE6oiKV08gsgkT0x0ebfpgZLTf5Y" />
         <link rel="icon" href="https://lh3.googleusercontent.com/pw/AP1GczMflJz2ICYwAbOnNNH9xK3dsBosn4ROpvyTAP7sMoqdIOuAP4QhqMzFjzt67HcwtzKaZoQ7DmO-xVwBJQEAw3eiQejuL-ScqTgDFGgQ-8HW67mxcABcsAZpiSfHE6oiKV08gsgkT0x0ebfpgZLTf5Y" />
         <link rel="stylesheet" type="text/css" href="open-key.css" />
     </head>
-    <body>
+<body>
         <h3 class="section-title">SHA-384 Generator</h3>
         <div class="container">
             <textarea id="inputText" placeholder="변환할 값을 입력하세요..."></textarea>
@@ -22,16 +22,10 @@
                 <button class="btn-copy" onclick="copyHash()">복사하기</button>
             </div>
         </div>
+        
         <h3 class="section-title">Archive Open-Key List</h3>
-        <table>
-            <thead>
-                <tr>
-                    <th style="width: 30%;">계정</th>
-                    <th style="width: 70%;">공개키</th>
-                </tr>
-            </thead>
-            <tbody id="table-body"></tbody>
-        </table>
+        <div id="category-container" style="width: 100%; max-width: 700px; margin: 0 auto;"></div>
+
         <script src="open-key.js"></script>
     </body>
 </html>
